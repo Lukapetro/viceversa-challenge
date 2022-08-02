@@ -19,14 +19,14 @@ class MyClass2 {
 	}
 }
 
-MyClass.getFullName(); //Which is the result here:
+MyClass.getFullName(); //Which is the result here: MyClass.getFullName is not a function
 
 var me = MyClass("Michael", "Sogos");
-me.getFullName(); //Which is the result here:
+me.getFullName(); //Which is the result here: error missing new, but should be Sogos
 
 var you = new MyClass("Mario", "Rossi");
-you.getFullName(); //Which is the result here:
+you.getFullName(); //Which is the result here: Rossi
 
-MyClass2.getFullName(me); //Which is the result here:
+MyClass2.getFullName(me); //Which is the result here: Sogos
 
-MyClass2.getFullName(you); //Which is the result here:
+MyClass2.getFullName(you); //Which is the result here: Rossi
